@@ -30,7 +30,7 @@ function _page($$payload, $$props) {
   push();
   var $$store_subs;
   const each_array = ensure_array_like(store_get($$store_subs ??= {}, "$featuredProducts", featuredProducts));
-  $$payload.out += `<section class="hero svelte-8d47a"><h1>Welcome to ShopEase</h1> <p>Your one-stop shop for the latest electronics and gadgets.</p> <div class="cart-summary svelte-8d47a">🛒 Cart: ${escape_html(store_get($$store_subs ??= {}, "$cart", cart).length)} item${escape_html(store_get($$store_subs ??= {}, "$cart", cart).length === 1 ? "" : "s")}</div></section> <section class="featured svelte-8d47a"><h2>Featured Products</h2> <div class="products svelte-8d47a"><!--[-->`;
+  $$payload.out += `<section class="hero svelte-p7mrjo"><h1>Welcome to ShopEase</h1> <p>Your one-stop shop for the latest electronics and gadgets.</p> <div class="cart-summary svelte-p7mrjo">🛒 Cart: ${escape_html(store_get($$store_subs ??= {}, "$cart", cart).length)} item${escape_html(store_get($$store_subs ??= {}, "$cart", cart).length === 1 ? "" : "s")}</div></section> <section class="featured svelte-p7mrjo"><h2>Featured Products</h2> <div class="products svelte-p7mrjo"><!--[-->`;
   for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
     let product = each_array[$$index];
     ProductCard($$payload, { product });
@@ -41,4 +41,4 @@ function _page($$payload, $$props) {
 }
 
 export { _page as default };
-//# sourceMappingURL=_page.svelte-D4DtXlyr.js.map
+//# sourceMappingURL=_page.svelte-a4LLoCEa.js.map
