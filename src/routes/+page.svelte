@@ -6,7 +6,6 @@
 <section class="hero">
   <h1>Welcome to ShopEase</h1>
   <p>Your one-stop shop for the latest electronics and gadgets.</p>
-  <!-- <a href="/shop" class="shop-btn">Shop Now</a> -->
   <div class="cart-summary">
     🛒 Cart: {$cart.length} item{($cart.length === 1 ? '' : 's')}
   </div>
