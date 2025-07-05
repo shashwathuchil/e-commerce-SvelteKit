@@ -3,7 +3,7 @@
   import { featuredProducts } from '$lib/stores.js';
   import { get } from 'svelte/store';
 
-  console.log("Store Get",get(featuredProducts))
+  console.log("Store Get",get(featuredProducts));
 </script>
 
 <section class="hero">
