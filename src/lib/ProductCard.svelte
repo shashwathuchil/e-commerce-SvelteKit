@@ -1,12 +1,27 @@
+
 <script>
+  import { cart } from '$lib/stores.js';
+  /** @type {{ id: number|string, name: string, price: number, image: string }} */
   export let product;
+  function addToCart() {
+    cart.update(items => {
+      const productId = typeof product.id === 'string' ? parseInt(product.id, 10) : product.id;
+      const existing = items.find(item => item.id === productId);
+      if (existing) {
+        return items.map(item =>
+          item.id === productId ? { ...item, quantity: (item.quantity ?? 1) + 1 } : item
+        );
+      }
+      return [...items, { ...product, id: productId, quantity: 1 }];
+    });
+  }
 </script>
 
 <div class="product-card">
   <img src={product.image} alt={product.name} />
   <h3>{product.name}</h3>
   <p class="price">${product.price}</p>
-  <button>Add to Cart</button>
+  <button on:click={addToCart}>Add to Cart</button>
 </div>
 
 <style>
