@@ -22,7 +22,6 @@
 </section>
 
 <style>
-
 .cart-summary {
     margin-top: 1.5rem;
     font-size: 1.1rem;
