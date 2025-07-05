@@ -1,11 +1,9 @@
 <script>
   import ProductCard from '$lib/ProductCard.svelte';
-  // Example featured products data
-  const featuredProducts = [
-    { id: 1, name: 'Wireless Headphones', price: 99.99, image: '/images/headphones.jpg' },
-    { id: 2, name: 'Smart Watch', price: 149.99, image: '/images/smartwatch.jpg' },
-    { id: 3, name: 'Bluetooth Speaker', price: 59.99, image: '/images/speaker.jpg' }
-  ];
+  import { featuredProducts } from '$lib/stores.js';
+  import { get } from 'svelte/store';
+
+  console.log(get(featuredProducts))
 </script>
 
 <section class="hero">
@@ -17,7 +15,7 @@
 <section class="featured">
   <h2>Featured Products</h2>
   <div class="products">
-    {#each featuredProducts as product}
+    {#each $featuredProducts as product}
       <ProductCard {product} />
     {/each}
   </div>
