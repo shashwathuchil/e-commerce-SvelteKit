@@ -6,14 +6,14 @@ function __memo(fn) {
 
 return {
 	appDir: "_app",
-	appPath: "_app",
+	appPath: "e-commerce-SvelteKit/_app",
 	assets: new Set(["favicon.svg","images/headphones.jpg","images/smartwatch.jpg","images/speaker.jpg"]),
 	mimeTypes: {".svg":"image/svg+xml",".jpg":"image/jpeg"},
 	_: {
-		client: {start:"_app/immutable/entry/start.CMyvdJ9u.js",app:"_app/immutable/entry/app.CwhG0QPa.js",imports:["_app/immutable/entry/start.CMyvdJ9u.js","_app/immutable/chunks/DnTXvYOz.js","_app/immutable/chunks/H5JPiC5a.js","_app/immutable/chunks/CjJuquWN.js","_app/immutable/chunks/C2VKwU6q.js","_app/immutable/chunks/Bf1z0gfN.js","_app/immutable/entry/app.CwhG0QPa.js","_app/immutable/chunks/CjJuquWN.js","_app/immutable/chunks/C2VKwU6q.js","_app/immutable/chunks/CWj6FrbW.js","_app/immutable/chunks/H5JPiC5a.js","_app/immutable/chunks/Bf1z0gfN.js","_app/immutable/chunks/D0Ox_JdE.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.DSfKIvqz.js",app:"_app/immutable/entry/app.DvSPVjLJ.js",imports:["_app/immutable/entry/start.DSfKIvqz.js","_app/immutable/chunks/B5C6cuLo.js","_app/immutable/chunks/H5JPiC5a.js","_app/immutable/chunks/CjJuquWN.js","_app/immutable/chunks/C2VKwU6q.js","_app/immutable/chunks/Bf1z0gfN.js","_app/immutable/entry/app.DvSPVjLJ.js","_app/immutable/chunks/CjJuquWN.js","_app/immutable/chunks/C2VKwU6q.js","_app/immutable/chunks/CWj6FrbW.js","_app/immutable/chunks/H5JPiC5a.js","_app/immutable/chunks/Bf1z0gfN.js","_app/immutable/chunks/D0Ox_JdE.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./chunks/0-Dxi2lEDo.js')),
-			__memo(() => import('./chunks/1-DLjM2RjL.js')),
+			__memo(() => import('./chunks/1-BuSBrzEm.js')),
 			__memo(() => import('./chunks/2-CUxwZxOE.js'))
 		],
 		routes: [
@@ -37,7 +37,7 @@ return {
 
 const prerendered = new Set([]);
 
-const base = "";
+const base = "/e-commerce-SvelteKit";
 
 export { base, manifest, prerendered };
 //# sourceMappingURL=manifest.js.map
